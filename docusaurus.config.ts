@@ -122,7 +122,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Development of this software is being lead by the Telecommunications Regulatory Authority (TRA) of Brazil, ANATEL.\nCopyright © ${new Date().getFullYear()} Radio-Spectrum SHARC. Built with Docusaurus.`,
+      copyright: `Development of this software is being lead by the Telecommunications Regulatory Authority (TRA) of Brazil, ANATEL.\nCopyright © ${new Date().getFullYear()} Radio-Spectrum SHARC.`,
     },
     prism: {
       theme: prismThemes.github,

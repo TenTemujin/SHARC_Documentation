@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -48,25 +48,25 @@ function HomepageHeader() {
 function HomepageFeatures() {
   return (
     <section style={featureStyles.homepageFeatures}>
-      <h2 style={featureStyles.featureTitle}>Welcome to SHARC</h2>
+      <h2 style={featureStyles.featureTitle}>Explore Our Features</h2>
       <p style={featureStyles.featureDescription}>
-        A powerful simulator designed to support SHARing and Compatibility studies of radiocommunication systems.
+        Discover the unique and powerful tools available on our platform.
       </p>
       <div style={featureStyles.featureList}>
         {[
           { 
             title: "Follow the Anatel Standards", 
-            description: "This software complies with ANATEL regulations and recommendations, aligning with national telecommunications standards in Brazil. By adhering to ANATEL’s guidelines, it ensures accurate modeling and regulatory consistency, supporting reliable applications in areas like satellite footprint analysis and IMT network integration.", 
+            description: "Optimized for speed and efficiency.", 
             logo: "/img/anatel_logo.svg"  
           },
           { 
             title: "SHARing and Compatibility", 
-            description: "The development of this software is being lead by the Telecommunications Regulatory Authority (TRA) of Brazil, ANATEL.", 
+            description: "Equipped with cutting-edge functionalities.", 
             logo: "/img/logo.svg"  
           },
           { 
             title: "Follow the ITU Resolutions", 
-            description: "This software follows ITU resolutions and recommendations, ensuring alignment with global telecommunications standards. By adhering to these guidelines, it supports accurate modeling and analysis, fostering consistency and reliability in applications such as satellite footprint coverage and IMT network integration.",
+            description: "Designed for forward-thinking teams.",
             logo: "/img/itu_logo.svg"  
           },
         ].map((feature, index) => (
@@ -91,6 +91,33 @@ function HomepageFeatures() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
 
+  // Apply styles only on the client side
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const styleSheet = document.styleSheets[0];
+      
+      styleSheet.insertRule(`@keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }`, styleSheet.cssRules.length);
+
+      styleSheet.insertRule(`@keyframes slideUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }`, styleSheet.cssRules.length);
+
+      styleSheet.insertRule(`@keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }`, styleSheet.cssRules.length);
+
+      styleSheet.insertRule(`.moving-icon {
+        animation: moveIcon 2s ease-in-out infinite;
+      }`, styleSheet.cssRules.length);
+    }
+  }, []);
+
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
@@ -104,7 +131,7 @@ export default function Home(): JSX.Element {
   );
 }
 
-// Styling for the interactive "Explore SHARC" button
+// Existing header and feature styles
 const headerStyles = {
   heroBanner: {
     background: 'linear-gradient(135deg, #007acc, #00b4d8)',
@@ -174,36 +201,7 @@ const headerStyles = {
   },
 };
 
-// Add CSS keyframe animations for hover effects and interactive buttons
-const styleSheet = document.styleSheets[0];
-
-styleSheet.insertRule(`@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}`, styleSheet.cssRules.length);
-
-styleSheet.insertRule(`@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}`, styleSheet.cssRules.length);
-
-styleSheet.insertRule(`@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}`, styleSheet.cssRules.length);
-
-styleSheet.insertRule(`@keyframes moveIcon {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}`, styleSheet.cssRules.length);
-
-styleSheet.insertRule(`.moving-icon {
-  animation: moveIcon 2s ease-in-out infinite;
-}`, styleSheet.cssRules.length);
-
-// Define feature styles
+// Existing feature styles
 const featureStyles = {
   homepageFeatures: {
     padding: '4rem 0',
@@ -249,9 +247,8 @@ const featureStyles = {
     marginBottom: '1rem',
   },
   iconImage: {
-    width: '70px', // Increase size of icons
+    width: '70px',
     height: 'auto',
     transition: 'transform 0.3s ease',
   },
 };
-

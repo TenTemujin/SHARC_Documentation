@@ -56,7 +56,7 @@ function HomepageFeatures() {
         {[
           { 
             title: "Follow the Anatel Standards", 
-            description: This software complies with ANATEL regulations and recommendations, aligning with national telecommunications standards in Brazil", 
+            description: "This software complies with ANATEL regulations and recommendations, aligning with national telecommunications standards in Brazil", 
             logo: "/img/anatel_logo.svg"  
           },
           { 

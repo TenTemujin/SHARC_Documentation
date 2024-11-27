@@ -48,7 +48,7 @@ function HomepageHeader() {
 function HomepageFeatures() {
   return (
     <section style={featureStyles.homepageFeatures}>
-      <h2 style={featureStyles.featureTitle}>Explore Our Features</h2>
+      <h2 style={featureStyles.featureTitle}>Welcome to SHARC</h2>
       <p style={featureStyles.featureDescription}>
         A powerful simulator designed to support SHARing and Compatibility studies of radiocommunication systems.
       </p>

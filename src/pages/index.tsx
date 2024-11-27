@@ -50,23 +50,23 @@ function HomepageFeatures() {
     <section style={featureStyles.homepageFeatures}>
       <h2 style={featureStyles.featureTitle}>Explore Our Features</h2>
       <p style={featureStyles.featureDescription}>
-        Discover the unique and powerful tools available on our platform.
+        A powerful simulator designed to support SHARing and Compatibility studies of radiocommunication systems.
       </p>
       <div style={featureStyles.featureList}>
         {[
           { 
             title: "Follow the Anatel Standards", 
-            description: "Optimized for speed and efficiency.", 
+            description: This software complies with ANATEL regulations and recommendations, aligning with national telecommunications standards in Brazil", 
             logo: "/img/anatel_logo.svg"  
           },
           { 
             title: "SHARing and Compatibility", 
-            description: "Equipped with cutting-edge functionalities.", 
+            description: "The development of this software is being lead by the Telecommunications Regulatory Authority (TRA) of Brazil, ANATEL.", 
             logo: "/img/logo.svg"  
           },
           { 
             title: "Follow the ITU Resolutions", 
-            description: "Designed for forward-thinking teams.",
+            description: "This software follows ITU resolutions and recommendations, ensuring alignment with global telecommunications standards. By adhering to these guidelines, it supports accurate modeling and analysis, fostering consistency and reliability in applications such as satellite footprint coverage and IMT network integration.",
             logo: "/img/itu_logo.svg"  
           },
         ].map((feature, index) => (

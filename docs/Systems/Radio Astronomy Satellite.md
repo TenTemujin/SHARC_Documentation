@@ -2,13 +2,13 @@
 sidebar_position: 7
 ---
 
-# Radio Astronomy Satellite (RAS)
+# Radio Astronomy Service (RAS)
 
 ---
 
-## Overview of Radio Astronomy Satellite (RAS)
+## Overview of Radio Astronomy Service (RAS)
 
-**Radio Astronomy Satellites (RAS)** are space-based platforms designed to observe radio emissions from celestial objects, such as stars, galaxies, and other cosmic phenomena. These satellites are equipped with highly sensitive radio antennas and receivers to detect and study radio waves that travel through space. RAS plays a crucial role in expanding our understanding of the universe by exploring the universe in wavelengths that are invisible to the naked eye, offering insights into phenomena such as black holes, pulsars, and cosmic background radiation.
+**Radio Astronomy Service (RAS)** are earth based platforms designed to observe radio emissions from celestial objects, such as stars, galaxies, and other cosmic phenomena. These satellites are equipped with highly sensitive radio antennas and receivers to detect and study radio waves that travel through space. RAS plays a crucial role in expanding our understanding of the universe by exploring the universe in wavelengths that are invisible to the naked eye, offering insights into phenomena such as black holes, pulsars, and cosmic background radiation.
 
 ### Key Features of RAS
 

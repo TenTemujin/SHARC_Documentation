@@ -48,7 +48,7 @@ Start by forking the official SHARC repository to your GitHub account:
 
     `$ cd SHARC/`
 
-3. Install python 3.8 or above and the virutalenv module in your system (SHARC has been tested from versions 3.8 and above).
+3. Install python 3.12 or equivalent and the virutalenv module in your system (SHARC has been tested from versions 3.12 versions).
 4. Install your local copy into a virtualenv.
     
     `$ cd sharc`

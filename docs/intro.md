@@ -25,7 +25,7 @@ SHARC helps users simulate and evaluate various radiocommunication systems to un
 
 Before setting up SHARC, make sure that you have the following installed:
 
-- **Python 3.8 or higher**: You can download Python from the official [Python website](https://www.python.org/downloads/).
+- **Python 3.12**: You can download Python from the official [Python website](https://www.python.org/downloads/).
 - **PEP 8 Style Guide**: Contributing to SHARC? Please follow the [PEP8 style guide](https://www.python.org/dev/peps/pep-0008/) to keep the codebase clean and consistent.
 
 ---
